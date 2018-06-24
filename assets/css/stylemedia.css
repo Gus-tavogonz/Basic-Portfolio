@@ -44,6 +44,8 @@ h1:hover{
     padding: 20px;
 }
 
+
+
 nav ul{
 	width:100%;
 	background:#DCDCDC;
@@ -72,7 +74,7 @@ nav ul li a{
 	text-decoration:none;
 	color: #ffffff;
 }
-
+/*HERO*/
 /*HERO IMAGE CONTAINER NEEDS SOME WORK 6/10/2018*/
 .hero-image{
 	background-image:url("../../assets/images/hero-image1.jpg");
@@ -103,7 +105,6 @@ nav ul li a{
 .hero-text p{
 	text-align: center
 }
-
 
 /*THIS CLASS CLEAR FOR NEXT ROW*/
 .row {
@@ -149,8 +150,6 @@ nav ul li a{
 	text-align: center;
 }
 
-/*CONTENT AFTER HERO IMAGE*/
-
 
 .content-3-columns{
 	padding-top: 40px;			
@@ -192,7 +191,7 @@ nav ul li a{
 	margin: 5px;
 }
 
-
+/*CONTENT PARAGRPAH*/
 /*content about paragraph*/
 .content-paragraph{
 	text-align: center;
@@ -208,9 +207,8 @@ nav ul li a{
 	line-height: 1.6;
 	text-align: center;
 }
-
-
 /*NEWSLETTER*/
+
 .container{
 	width:80%;
 	margin:auto;
@@ -250,10 +248,7 @@ nav ul li a{
 	width:250px;
 
 }
-
-
-/*FOOTER*/
-
+/*////FOOTER*/
 
 .footer-image{
 	width: 80%;
@@ -353,7 +348,7 @@ footer li{
 }
 
 
-/*-----------ABOUT STYLE STARTS HERE---------------*/
+/*-----------ABOUT-------*/
 
 .subtitle-h2{
     font-size: 28px;
@@ -365,9 +360,10 @@ footer li{
     width: 960px;
     background-color: #D3D3D3;
 	padding: 20px;
-    margin-left:250px;
-    margin-top: 20px;   
-    margin-bottom: 20px;	
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+
 }
 
 .about-content{
@@ -393,50 +389,28 @@ footer li{
     float: left;
 }
 
-/*-------------CONTACT-STYLE-------------*/
+/*FORM CONTACT*/
 
-
-.contact-form{
-	padding: 20px;
-	width:500px;
-	height:25px;
-	margin-left: 20px;
+.form-cont form input{
+    width:500px;
 }
-.contact-form p{
-	padding: 5px;
-
+.form-cont textarea{
+    width: 500px;
+    height: 300px;
 }
 
-.contact-form input{
-	width: 100%;
-	height: 25px;
-
-}
-.contact-form textarea{
-	width: 100%;
-	height: 200px;	
-}
-.button_1{
-	height: 38px;
-	background: #e8491d;
-	border: 0;
-	border: none;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: #ffffff;
-
-/*-----------------PORTFOLIO STYLE--------------*/
-
-
-.container-section{
+/*PORTFOLIO STYLE*/
+.container-section-port{
     height: 500px;
     width: 960px;
     background-color: #D3D3D3;
 	padding: 20px;
-    margin-left:250px;
-    margin-top: 20px;   
-    margin-bottom: 20px;	
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+
 }
+
 
 .port-image{
     margin-top: 20px;
@@ -455,5 +429,289 @@ footer li{
     padding: 10px;
     position: relative;
     bottom: 55px;
+    
+}
+
+/*media query 767*/
+
+@media only screen and (max-width: 767px) {
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding:10px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .hero-text{
+        margin-top: 200px;
+        padding: 5px;
+        /*
+        background-color: orange;*/
+        height:175px;
+        font-size: 25px;
+        color: #DCDCDC;
+        width:500px;
+        margin-left: 20px;
+        line-height:;
+        position:absolute;
+        
+        width: 100%
+    
+    }
+    .hero-text p{
+        text-align: center
+    }
+    
+    .row {
+        width: 100%;
+        clear: both; /* Clear creates new styles for the next row */
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .ten {
+        width: 83%; /*THIS CLASS SPANS TEN COLUMNS OF THE HTML*/
+        float: left;
+        margin-left: 2%;
+    }
+    
+    .nine {
+        padding: 20px; /*THIS CLASS SPANS NINE COLUMNS OF THE HTML*/
+        width: 90%;
+        float: left;
+        margin-left: 2%;
+    }
+    .eight {
+        width: 66%; /*THIS CLASS SPANS EIGHT COLUMNS OF THE HTML*/
+        float: left;
+        margin-left: 2%;
+    }
+    .six {
+        width: 51%; /* This div spans six columns (the entire row)*/
+        float: left;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
+    .four {
+        width: 100%; /*THIS CLASS SPANS FOUR COLUMNS OF THE HTML*/
+        float:left;
+        margin-left: 2%;
+    }
+    .three {
+        width: 20%; /*THIS CLASS SPANS THREE COLUMNS OF THE HTML*/
+        float:left;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
+    
+    .content-3-columns{
+        padding-top: 40px;			
+        padding-bottom: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .content-3-columns h2{
+        padding-top: 40px;			
+        padding-bottom: 20px;
+        text-align: center;
+        color: #ff6900;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .content-3-columns p{
+        text-align: justify;
+    }
+    
+    .top-left-column-home{
+        background: lightgray;
+        height: 300px;
+        padding:20px 20px;
+        margin: 5px;
+    }
+    
+    .top-middle-column-home{
+        background:lightgray;
+        height: 300px;
+        padding:20px 20px;
+        margin: 5px;
+        
+    }
+    .top-right-column-home{
+        background:lightgray;
+        height: 300px;
+        padding:20px 20px;
+        margin: 5px;
+    }
+
+    
+.footer-image{
+	width: 100%;
+	margin: auto;
+	
+}
+
+.footer-container{
+	margin-top: 40px;
+	margin-left: 8px;
+	margin-right: 5px;
+	height: 375px;
+	width:100%;
+	clear: both;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	background-image: url(../../assets/images/f1.jpg);
+	background-color: #ff6900;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;		
+}
+
+
+footer li{
+	list-style: none;
+	list-style-position: inherit;
+	
+}
+
+.contact{
+	margin-top: 25px;
+	padding: 5px;
+	font-size: 14px;
+	margin-left: 19px;
+	
+	height:80px;
+	color: #DCDCDC;
+}
+.around-the-web{
+	margin-top: 10px;
+	font-size: 14px;
+	
+	
+	
+	text-align:;
+	padding:5px;
+	height:80px;
+	color: #DCDCDC;
+}
+
+.around-the-web li{ /*This Pushes the li element to the left, necessary with reset.css*/
+    text-align: left;
+   
+
+}
+.instagram-feed{
+	margin-top: 35px;
+	font-size: 14px;
+	
+	
+	list-style-position: inherit;
+	text-align: left;
+	padding:5px;
+	height:80px;
+	color: #DCDCDC;
+}
+.copyright{
+float: right;
+background-color: #252525
+
+}
+
+.bottom-footer{
+	width:100%;
+	background-color: #252525;
+	color: #DCDCDC;
+	margin-top: 0%;
+}
+.bottom-footer ul{
+	width:100%;
+	padding: 5px;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	background-color: #252525;
+}
+
+/*****about***/
+
+.subtitle-h2{
+    font-size: 28px;
+    color: #ff6900;
+    font-weight: bold;
+}
+.container-section{
+    height: 500px;
+    width: 100%;
+    background-color: #D3D3D3;
+	padding: 20px;
+    margin-left:none;
+    margin-top: 20px;   
+    margin-bottom: 20px;	
+}
+
+.about-content{
+	margin-top: 20px;
+	text-align: justify;
+	height: 200px;
+	padding: 20px 20px 0px 20px;
+	margin: auto;
+    width:90%;
+    margin-left: -10px;
+   
+}
+.about-content h1{
+	color: #ff6900;
+}
+.about-image{
+    padding: 20px;
+    margin-top: 20px;
+    width:300px;
+    
+	height:50%;
+    background-image: url(../../assets/images/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+/*PORTFOLIO*/
+.container-section-port{
+    height:670px;
+    width: 100%;
+    background-color: #D3D3D3;
+	padding: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+}
+    
+.port-image{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+    float: left;
+    
+    
+}
+
+.description{
+    background-color: #ff6900;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 55px;
+    
+    
     
 }
